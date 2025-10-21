@@ -14,11 +14,11 @@
 
 ### 1. 과제진행 요구사항
 
-- (자동차 경주 저장소)[https://github.com/woowacourse-precourse/javascript-calculator-8]를 클론하는 것으로 시작한다.
+- [자동차 경주 저장소](https://github.com/woowacourse-precourse/javascript-calculator-8)를 클론하는 것으로 시작한다.
 - 기능을 구현하기 전 README.md에 구현할 기능 목록을 정리해 추가한다.
 - Git의 커밋 단위는 앞 단계에서 README.md에 정리한 기능 목록 단위로 추가한다
-  - (AngularJS Git Commit Message Conventions)[https://gist.github.com/stephenparish/9941e89d80e2bc58a153]을 참고해 커밋 메시지를 작성한다.
-- 자세한 과제 진행 방법은 (프리코스 진행 가이드 문서)[https://github.com/woowacourse/woowacourse-docs/tree/main/precourse#%EC%A0%9C%EC%B6%9C-%EA%B0%80%EC%9D%B4%EB%93%9C]를 참고한다.
+  - [AngularJS Git Commit Message Conventions](https://gist.github.com/stephenparish/9941e89d80e2bc58a153)을 참고해 커밋 메시지를 작성한다.
+- 자세한 과제 진행 방법은 [프리코스 진행 가이드 문서](https://github.com/woowacourse/woowacourse-docs/tree/main/precourse#%EC%A0%9C%EC%B6%9C-%EA%B0%80%EC%9D%B4%EB%93%9C)를 참고한다.
 
 ### 2. 기능 요구사항
 
@@ -41,7 +41,7 @@
 - 프로그램 종료 시 process.exit()를 호출하지 않는다.
 - 프로그래밍 요구 사항에서 달리 명시하지 않는 한 파일, 패키지 등의 이름을 바꾸거나 이동하지 않는다.
 - 자바스크립트 코드 컨벤션을 지키면서 프로그래밍한다.
-- 기본적으로 (JavaScript Style Guide)[https://github.com/woowacourse/woowacourse-docs/tree/main/styleguide/javascript]를 원칙으로 한다.
+- 기본적으로 [JavaScript Style Guide](https://github.com/woowacourse/woowacourse-docs/tree/main/styleguide/javascript)를 원칙으로 한다.
 
 #### 요구사항 2)
 
@@ -52,9 +52,9 @@
 - 함수(또는 메서드)가 한 가지 일만 하도록 최대한 작게 만들어라.
 - Jest를 이용하여 정리한 기능 목록이 정상적으로 작동하는지 테스트 코드로 확인한다.
   - 테스트 도구 사용법이 익숙하지 않다면 아래 문서를 참고하여 학습한 후 테스트를 구현한다
-    - (Using Matchers)[https://jestjs.io/docs/using-matchers]
-    - (Testing Asynchronous Code)[https://jestjs.io/docs/asynchronous]
-    - (Jest로 파라미터화 테스트하기: test.each(), describe.each())[https://www.daleseo.com/jest-each/]
+    - [Using Matchers](https://jestjs.io/docs/using-matchers)
+    - [Testing Asynchronous Code](https://jestjs.io/docs/asynchronous)
+    - [Jest로 파라미터화 테스트하기: test.each(), describe.each()](https://www.daleseo.com/jest-each/)
 
 ## 요구사항 구현하기
 
