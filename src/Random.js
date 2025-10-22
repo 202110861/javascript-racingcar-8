@@ -1,15 +1,13 @@
 import { Random } from "@woowacourse/mission-utils";
-import { Car } from "./Car.js";
 
-export function RandomForward(CarList) {
-  CarList.forEach((car) => {
-    const carObject = new Car(car);
+export function RandomForward(carList) {
+  carList.forEach((car) => {
     const RandomNumber = Random.pickNumberInRange(0, 9);
 
     if (RandomNumber >= 4) {
-      carObject.move();
+      car.move();
     }
 
-    console.log(`${carObject.name} : `, "-".repeat(carObject.getPosition()));
+    console.log(`${car.name} : `, "-".repeat(car.getPosition()));
   });
 }

@@ -1,5 +1,11 @@
-export function Separate(names) {
-  const CAR_LIST = names.split(",");
+import { Car } from "./Car.js";
 
-  return CAR_LIST;
+export function Separate(names) {
+  const carNameList = names.split(",");
+
+  const carObjectList = carNameList.map((name) => {
+    return new Car(name);
+  });
+
+  return carObjectList;
 }
