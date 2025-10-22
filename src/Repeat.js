@@ -1,10 +1,11 @@
 import { Console } from "@woowacourse/mission-utils";
 import { RandomForward } from "./Random.js";
 
-export function Repeat() {
-  const count = Console.readLineAsync("시도할 횟수는 몇 회인가요?\n");
+export async function Repeat(carList, count) {
+  Console.print("\n실행 결과");
 
-  for (let i = 0; i < count; i++) {
+  for (let i = 0; i < (await count); i++) {
     RandomForward(carList);
+    Console.print("\n");
   }
 }

@@ -1,6 +1,6 @@
 import { Console } from "@woowacourse/mission-utils";
 import { Separate } from "./Separate.js";
-import { RandomForward } from "./Random.js";
+import { Repeat } from "./Repeat.js";
 
 class App {
   async run() {
@@ -10,7 +10,9 @@ class App {
 
     const carList = Separate(await carNames);
 
-    RandomForward(carList);
+    const count = Console.readLineAsync("시도할 횟수는 몇 회인가요?\n");
+
+    Repeat(carList, await count);
   }
 }
 
