@@ -1,6 +1,7 @@
 import { Console } from "@woowacourse/mission-utils";
 import { Separate } from "./Separate.js";
 import { Repeat } from "./Repeat.js";
+import { Winner } from "./Winner.js";
 
 class App {
   async run() {
@@ -12,7 +13,8 @@ class App {
 
     const count = Console.readLineAsync("시도할 횟수는 몇 회인가요?\n");
 
-    Repeat(carList, await count);
+    await Repeat(carList, await count);
+    await Winner(carList);
   }
 }
 
