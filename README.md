@@ -99,13 +99,65 @@
 
 ## 요구사항 구현하기
 
+### 자동차 객체
+
+인스턴스
+
+- 자동차 이름, 자동차 위치
+
+프로토타입 메서드
+
+- move()
+- 자동차 위치 1 증가
+- getPosition()
+  - 자동차 위치 값 반환
+
+```jsx
+//Car.js
+export class Car {
+  constructor(name) {
+    this.name = name;
+    this.position = 0;
+  }
+
+  move() {
+    this.position++;
+  }
+
+  getPosition() {
+    return this.position;
+  }
+}
+```
+
 ### 자동차 이름 분리
 
-### 반복문
+- 입력받은 문자열을 ',' 를 기준으로 분리
+  - split 메서드 사용
+- 분리한 문자 (자동차 이름)을 Car 객체를 생성하여 name에 저장
 
 ### 0~9 무작위 값만큼 전진
 
+- 무작위 값 생성
+  - `Random.pickNumberInRange(0, 9)`
+- 4 이상이면 전진
+  - if문 사용
+  - Car 객체의 move() 사용
+
+### 반복문
+
+- 입력한 수 만큼 무작위 값 생성 및 전진 반복
+  - for문 사용
+
 ### 우승자 판단
+
+- 변수 : `maxPosition = 0;`
+- 상수 : `winnerList[] = [];`
+
+- Car 객체의 현재 위치 비교
+  - Car 객체의 getPosition() 사용
+  - if문으로 제일 큰 수(위치) 찾기
+  - if문으로 해당 위치에 있는 자동차 찾기
 
 ### 에러 처리
 
