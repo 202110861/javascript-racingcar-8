@@ -173,15 +173,14 @@ export class Car {
 
 ## 실수
 
-###  async await
+### 1) async await
 
-### Number.inInteger()
-```jsx
-  Number.isInteger(0); // true
-  Number.isInteger(1); // true
-  Number.isInteger(-100000); // true
-  Number.isInteger(99999999999999999999999); // true
-  
-  Number.isInteger(0.1); // false
-  Number.isInteger(Math.PI); // false
-```
+### 2) Number.inInteger()
+- 파라미터로 입력받은 값이 정수인지 판단하여 boolean값을 반환
+  - 값이 만약에 NaN이거나 Infinity여도 false를 반환
+- 판단하는 순서 중요!
+  - isNaN() 으로 숫자인지 판단
+  - !Number.inInteger()으로 정수 판단
+- 반대로 하면?
+  - 문자를 입력 시 !Number.inInteger()에서 먼저 false로 판단
+
