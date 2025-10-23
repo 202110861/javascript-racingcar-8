@@ -16,7 +16,5 @@ export async function Winner(carList) {
     }
   });
 
-  console.log("winnerList : ", winnerList);
-
   Console.print(`최종 우승자 : ${winnerList.join(", ")}`);
 }
