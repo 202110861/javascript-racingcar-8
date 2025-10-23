@@ -160,9 +160,6 @@ export class Car {
   - if문으로 해당 위치에 있는 자동차 찾기
 
 ### 에러 처리
-
-에러 상황
-
 - 자동차 이름
   - 구분자가 쉼표 이외의 문자일 경우
   - 자동차 이름이 5자 초과인 경우
@@ -175,3 +172,16 @@ export class Car {
 ## 결과
 
 ## 실수
+
+###  async await
+
+### Number.inInteger()
+```jsx
+  Number.isInteger(0); // true
+  Number.isInteger(1); // true
+  Number.isInteger(-100000); // true
+  Number.isInteger(99999999999999999999999); // true
+  
+  Number.isInteger(0.1); // false
+  Number.isInteger(Math.PI); // false
+```
