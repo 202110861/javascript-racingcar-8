@@ -2,6 +2,7 @@ import { Console } from "@woowacourse/mission-utils";
 import { Separate } from "./Separate.js";
 import { Repeat } from "./Repeat.js";
 import { Winner } from "./Winner.js";
+import { ValidateCarNumber } from "./validator.js";
 
 class App {
   async run() {

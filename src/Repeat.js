@@ -1,7 +1,10 @@
 import { Console } from "@woowacourse/mission-utils";
 import { RandomForward } from "./Random.js";
+import { ValidateCarNumber } from "./validator.js";
 
 export async function Repeat(carList, count) {
+  ValidateCarNumber(await count);
+
   Console.print("\n실행 결과");
 
   for (let i = 0; i < (await count); i++) {
