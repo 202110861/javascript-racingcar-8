@@ -9,6 +9,4 @@ describe("Separate 함수 테스트", () => {
     expect(carList[0].name).toBe("pobi");
     expect(carList[1].name).toBe("woni");
   });
-
-  test("", () => {});
 });
