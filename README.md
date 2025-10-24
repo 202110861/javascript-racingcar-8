@@ -172,9 +172,7 @@ export class Car {
 
 ## 실수를 통해 얻은 지식
 
-### 1) async await
-
-### 2) Number.inInteger()
+### 1) Number.inInteger()
 
 - 파라미터로 입력받은 값이 정수인지 판단하여 boolean값을 반환
   - 값이 만약에 NaN이거나 Infinity여도 false를 반환
@@ -184,7 +182,7 @@ export class Car {
 - 반대로 하면?
   - 문자를 입력 시 !Number.inInteger()에서 먼저 false로 판단
 
-### 3) 테스트 코드
+### 2) 테스트 코드
 
 - `jest.spyOn(object, methodName)`
   - 호출 여부, 인자, 결과 등 추적하기 위한 설정 코드
