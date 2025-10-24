@@ -1,4 +1,4 @@
-import { Random } from "@woowacourse/mission-utils";
+import { Random, Console } from "@woowacourse/mission-utils";
 
 export function RandomForward(carList) {
   carList.forEach((car) => {
@@ -8,6 +8,6 @@ export function RandomForward(carList) {
       car.move();
     }
 
-    console.log(`${car.name} : `, "-".repeat(car.getPosition()));
+    Console.print(`${car.name} : ${"-".repeat(car.getPosition())}`);
   });
 }
