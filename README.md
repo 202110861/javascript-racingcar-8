@@ -152,7 +152,7 @@ export class Car {
 ### 5) 우승자 판단
 
 - 변수 : `maxPosition = 0;`
-- 상수 : `winnerList[] = [];`
+- 상수 : `winnerList = [];`
 
 - Car 객체의 현재 위치 비교
   - Car 객체의 getPosition() 사용
