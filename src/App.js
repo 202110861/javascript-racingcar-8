@@ -14,8 +14,8 @@ class App {
 
     const count = Console.readLineAsync("시도할 횟수는 몇 회인가요?\n");
 
-    await Repeat(carList, await count);
-    await Winner(carList);
+    await Repeat(carList, count);
+    Winner(carList);
   }
 }
 
