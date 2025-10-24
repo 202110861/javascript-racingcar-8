@@ -159,7 +159,8 @@ export class Car {
   - if문으로 제일 큰 수(위치) 찾기
   - if문으로 해당 위치에 있는 자동차 찾기
 
-### 에러 처리
+### 6) 에러 처리
+
 - 자동차 이름
   - 구분자가 쉼표 이외의 문자일 경우
   - 자동차 이름이 5자 초과인 경우
@@ -169,13 +170,12 @@ export class Car {
   - 숫자 외의 값으로 입력한 경우
   - 정수가 아닌 경우
 
-## 결과
-
-## 실수
+## 실수를 통해 얻은 지식
 
 ### 1) async await
 
 ### 2) Number.inInteger()
+
 - 파라미터로 입력받은 값이 정수인지 판단하여 boolean값을 반환
   - 값이 만약에 NaN이거나 Infinity여도 false를 반환
 - 판단하는 순서 중요!
@@ -184,3 +184,12 @@ export class Car {
 - 반대로 하면?
   - 문자를 입력 시 !Number.inInteger()에서 먼저 false로 판단
 
+### 3) 테스트 코드
+
+- `jest.spyOn(object, methodName)`
+  - 호출 여부, 인자, 결과 등 추적하기 위한 설정 코드
+- `beforeEach(()=> {...})`
+  - 각 테스트가 실행되기 직전마다 실행되는 설정 블록
+- `afterEach(()=> { jest.restoreAllMocks(); })`
+  - 각 테스트가 끝날 때마다 모든 mock/spy 설정 초기화
+  - 없으면 이전 테스틍에서 만든 mock/spy 가 다음 테스트에도 영향을 줌.
