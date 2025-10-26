@@ -2,6 +2,12 @@ import { Console } from "@woowacourse/mission-utils";
 import { RandomForward } from "./Random.js";
 import { ValidateCarNumber } from "./validator.js";
 
+/**
+ *
+ * @param {object} carList
+ * @param {number} count
+ */
+
 export async function Repeat(carList, count) {
   ValidateCarNumber(await count);
 

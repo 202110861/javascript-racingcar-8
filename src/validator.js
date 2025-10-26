@@ -6,6 +6,11 @@ export function ValidateCarLength(carName) {
   }
 }
 
+/**
+ *
+ * @param {string}} carName
+ */
+
 export function ValidateCarSeparator(carName) {
   if (!carName.includes(",")) {
     throw new Error("[ERROR] 자동차 이름 구분자는 쉼표(,)를 사용해야 합니다.");

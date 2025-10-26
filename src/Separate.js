@@ -1,6 +1,12 @@
 import { Car } from "./Car.js";
 import { ValidateCarLength, ValidateCarSeparator } from "./validator.js";
 
+/**
+ *
+ * @param {string} names
+ * @returns Car[] 반환
+ */
+
 export function Separate(names) {
   ValidateCarSeparator(names);
   const carNameList = names.split(",");
