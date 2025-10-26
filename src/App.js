@@ -2,17 +2,16 @@ import { Console } from "@woowacourse/mission-utils";
 import { Separate } from "./Separate.js";
 import { Repeat } from "./Repeat.js";
 import { Winner } from "./Winner.js";
+import { INPUT_MESSAGE } from "./Constants.js";
 import { ValidateCarNumber } from "./validator.js";
 
 class App {
   async run() {
-    const carNames = Console.readLineAsync(
-      "경주할 자동차 이름을 입력하세요.(이름은 쉼표(,) 기준으로 구분)\n"
-    );
+    const carNames = Console.readLineAsync(INPUT_MESSAGE.CAR_NAME_INPUT);
 
     const carList = Separate(await carNames);
 
-    const count = Console.readLineAsync("시도할 횟수는 몇 회인가요?\n");
+    const count = Console.readLineAsync(INPUT_MESSAGE.COUNT_INPUT);
 
     await Repeat(carList, count);
     Winner(carList);
