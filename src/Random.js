@@ -1,6 +1,7 @@
 import { Random, Console } from "@woowacourse/mission-utils";
 
 /**
+ * 0~9사이의 랜덤 값이 4 이상인 경우 앞으로 전진합니다.
  *
  * @param {object} carList
  */

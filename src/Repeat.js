@@ -3,6 +3,7 @@ import { RandomForward } from "./Random.js";
 import { ValidateCarNumber } from "./validator.js";
 
 /**
+ * count 만큼 RandomForward 함수를 반복 실행합니다.
  *
  * @param {object} carList
  * @param {number} count
