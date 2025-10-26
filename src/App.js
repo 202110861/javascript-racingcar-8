@@ -3,7 +3,6 @@ import { Separate } from "./Separate.js";
 import { Repeat } from "./Repeat.js";
 import { Winner } from "./Winner.js";
 import { INPUT_MESSAGE } from "./Constants.js";
-import { ValidateCarNumber } from "./validator.js";
 
 class App {
   async run() {
